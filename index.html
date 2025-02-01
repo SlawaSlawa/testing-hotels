@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Тестовое задание для Hotels.ru</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        />
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            .table-fix {
+                table-layout: fixed;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper bg-secondary">
+            <div class="container pt-5">
+                <h1 class="text-light mb-5">Тестовое задание для Hotels.ru</h1>
+                <hr />
+                <section class="section">
+                    <h2 class="text-light">Задачи на сообразительность:</h2>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Задача 1</h3>
+                            <p class="card-text">
+                                У вас есть восемь монет и одни весы с двумя
+                                чашами. Одна монета немного тяжелее остальных.
+                                Как за два взвешивания найти тяжелую монету?
+                            </p>
+                            <h3>Ответ:</h3>
+                            <p class="card-text">
+                                Нужно поделить монеты на 3 группы (по 3 3 2) и
+                                взвесить те, которые по 3, если они равны по
+                                весу, то искомая монета находится в другой
+                                группе(в которой 2 монеты), и тогда нужно их
+                                перевесить и соответственно какая тяжелее,та и
+                                искомая, если же они не равны(которые по 3), то
+                                нужно взять группу по-тяжелее и перевесить 2
+                                любых монеты, если они равны, то искомая монета
+                                третья, а если нет то искомая монета та что
+                                тяжелее
+                            </p>
+                        </div>
+                    </div>
+                    <!-- end Task 1 -->
+
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Задача 2</h3>
+                            <p class="card-text">
+                                Есть числа от трех до одиннадцати. Есть квадрат
+                                — 3 на 3 клетки:
+                            </p>
+
+                            <pre>а б в</pre>
+                            <pre>г д е</pre>
+                            <pre>ё ж з</pre>
+
+                            <p>
+                                (Буквы ничего не значат, кроме того, что числа
+                                не повторяются) Можно ли расставить числа в
+                                клетки квадрата таким образом, что перемножения
+                                чисел в строках дает тот же результат, что и
+                                произведение чисел в столбцах с теми же
+                                номерами? Если можно — расставьте, если нельзя —
+                                объясните почему.
+                            </p>
+                            <h3>Ответ:</h3>
+                            <div class="table-wrapper table-responsive">
+                                <table
+                                    class="table table-bordered text-center align-middle table-fix rounded-3"
+                                    style="width: 220px; height: 220px"
+                                >
+                                    <tbody>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>5</td>
+                                            <td>8</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>7</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>6</td>
+                                            <td>9</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end Task 2 -->
+
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Задача 3</h3>
+                            <p class="card-text">
+                                Ученые разработали новый материал неизвестной
+                                прочности. Они знают, что материал разбивается
+                                при падении с высоты от 1 метра до 5 000 метров.
+                                Но не знают, с какой именно высоты. Чтобы
+                                определить прочность, ученые поднимают предмет
+                                на некоторую высоту и сбрасывают его оттуда. Их
+                                задача — определить, начиная с какой именно
+                                высоты предмет начнет разбиваться
+                            </p>
+                            <p class="card-text">
+                                Специальная платформа, с помощью которой они
+                                осуществляют эксперимент, скидывает предмет
+                                только с дискретных высот (1, 2, 3 ... 4999,
+                                5000 метров — платформа не может скинуть
+                                предмет, например, с 2,5 метров. Точности в 1
+                                метр ученым вполне достаточно). При падении с
+                                высоты "n" метров предмет уничтожается. Если же
+                                его сбрасывали с высоты ниже "n", то его можно
+                                использовать в повторных экспериментах.
+                            </p>
+                            <p class="card-text">
+                                Нужно АБСОЛЮТНО ТОЧНО найти ту высоту, начиная с
+                                которой предметы разрушаются. Сделать это нужно
+                                за МИНИМАЛЬНО возможное число экспериментов. У
+                                ученых при этом всего 2 предмета, но они
+                                абсолютно одинаковые. Каким образом этого можно
+                                достигнуть? Сколько экспериментов при этом
+                                максимально потребуется?
+                            </p>
+                            <h3>Ответ:</h3>
+                            <p class="card-text">
+                                Так как есть 2 попытки, то нужно начать
+                                скидывать с половины высоты т.е с 2500 метров, и
+                                если предмет разбился, то второй уже нужно
+                                скидывать с 1 метра, а если не разбился то с
+                                2501 метра. Итого может уйти
+                                <b>2499 попыток</b>.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- end Task 3 -->
+                    <div class="card mb-5">
+                        <div class="card-body">
+                            <h3 class="card-title">Задача 4</h3>
+                            <p class="card-text">
+                                В университетскую столовую пришли трое студентов
+                                купить пирожки. Один хочет купить треть всех
+                                имеющихся в столовой пирожков и еще 2 пирожка.
+                                Другой хочет купить четверть от всех имеющихся
+                                пирожков и ещё 3 пирожка. А третий хочет купить
+                                пятую часть всех пирожков и ещё 8 пирожков. Если
+                                все трое купят столько пирожков, сколько
+                                планируют, то в столовой как раз закончатся все
+                                пирожки. Сколько пирожков есть в столовой?
+                            </p>
+                            <h3>Ответ:</h3>
+                            <p class="card-text">
+                                Для решения нужно составить уравнение: (1/3*x +
+                                2) - (1/4*x + 3) - (1/5*x + 8) = x <br />
+                                Итого x = <b>60 пирожков</b>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- end Task 4 -->
+                </section>
+                <section class="section">
+                    <h2 class="text-light">Задачи по программированию:</h2>
+                    <h2 class="text-warning mb-3">
+                        Ответы из этого раздела есть в консоле
+                    </h2>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Задача 1</h3>
+                            <p class="card-text">
+                                Разработайте функцию, которая принимает целое
+                                число в качестве аргумента и возвращает строку,
+                                содержащую это число и слово "компьютер" в
+                                нужном склонении по падежам в зависимости от
+                                числа. Например, при вводе числа 25 функция
+                                должна возвращать "25 компьютеров", для числа 41
+                                — "41 компьютер", а для числа 1048 — "1048
+                                компьютеров".
+                            </p>
+                            <h3>Ответ:</h3>
+                            <form>
+                                <div class="mb-3">
+                                    <label
+                                        for="declensions-input"
+                                        class="form-label"
+                                        >Введите количество компьютеров</label
+                                    >
+                                    <input
+                                        type="number"
+                                        class="form-control"
+                                        id="declensions-input"
+                                    />
+                                    <div
+                                        id="declensions-input-help"
+                                        class="form-text d-none"
+                                    >
+                                        Нужно ввести 1 число без пробелов.
+                                    </div>
+                                </div>
+
+                                <h4 id="declensions-result"></h4>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- end Task 1 -->
+
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Задача 2</h3>
+                            <p class="card-text">
+                                Написать функцию/метод, которая на вход получает
+                                массив положительных целых чисел произвольной
+                                длины. Например [42, 12, 18]. На выходе
+                                возвращает массив чисел, которые являются общими
+                                делителями для всех указанных числе. В примере
+                                это будет [2, 3, 6]
+                            </p>
+                            <h3>Ответ:</h3>
+                            <form>
+                                <div class="mb-3">
+                                    <label
+                                        for="common-divisor-input"
+                                        class="form-label"
+                                        >Введите числа через пробел</label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="common-divisor-input"
+                                    />
+                                    <div
+                                        id="common-divisor-help"
+                                        class="form-text d-none"
+                                    >
+                                        Нужно ввести числа.
+                                    </div>
+                                </div>
+                                <div class="row me-0 ms-0">
+                                    <button
+                                        id="common-divisor-start"
+                                        class="btn btn-primary col col-md-4 col-lg-2"
+                                    >
+                                        Получить ответ
+                                    </button>
+                                </div>
+                                <h4 id="common-divisor-result"></h4>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- end Task 2 -->
+
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Задача 3</h3>
+                            <p class="card-text">
+                                Написать функцию/метод, которая возвращает
+                                массив простых чисел в диапазоне (2 числа -
+                                минимальное и максимальное) заданных чисел.
+                                Например, на вход переданы 2 числа: от 11 до 20
+                                (диапазон считается включая граничные значения).
+                                На выходе программа должна выдать [11, 13 , 17,
+                                19]
+                            </p>
+                            <h3>Ответ:</h3>
+                            <form>
+                                <div class="mb-3">
+                                    <label
+                                        for="prime-numbers-input"
+                                        class="form-label"
+                                        >Введите числа через пробел</label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="prime-numbers-input"
+                                    />
+                                    <div
+                                        id="prime-numbers-help"
+                                        class="form-text d-none"
+                                    >
+                                        Нужно ввести 2 числа через пробел от
+                                        минимального до максимального.
+                                    </div>
+                                </div>
+                                <div class="row me-0 ms-0">
+                                    <button
+                                        id="prime-numbers-start"
+                                        class="btn btn-primary col col-md-4 col-lg-2"
+                                    >
+                                        Получить ответ
+                                    </button>
+                                </div>
+                                <h4 id="prime-numbers-result"></h4>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- end Task 3 -->
+
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Задача 4</h3>
+                            <p class="card-text">
+                                Написать метод, который в консоль выводит
+                                таблицу умножения. На вход метод получает число,
+                                до которого выводит таблицу умножения. В консоли
+                                должна появиться таблица.
+                            </p>
+                            <form>
+                                <div class="mb-3">
+                                    <label
+                                        for="multiplication-table-input"
+                                        class="form-label"
+                                        >Введите число</label
+                                    >
+                                    <input
+                                        type="number"
+                                        class="form-control"
+                                        id="multiplication-table-input"
+                                    />
+                                    <div
+                                        id="multiplication-table-help"
+                                        class="form-text d-none"
+                                    >
+                                        Нужно ввести 1 число без пробелов.
+                                    </div>
+                                </div>
+                                <div class="row me-0 ms-0">
+                                    <button
+                                        id="show-table-btn"
+                                        class="btn btn-primary col col-md-4 col-lg-2"
+                                    >
+                                        Вывести таблицу
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="table-wrapper table-responsive">
+                        <table
+                            class="table table-striped pt-3"
+                            id="multiplication-table"
+                        ></table>
+                    </div>
+                    <!-- end Task 4 -->
+                </section>
+            </div>
+        </div>
+        <script>
+            // console.log(
+            //     '-------------------- Задача 1 ---------------------------'
+            // )
+
+            const declensionsInput =
+                document.getElementById('declensions-input')
+
+            const declensionsResult =
+                document.getElementById('declensions-result')
+            const declensionsInputHelp = document.getElementById(
+                'declensions-input-help'
+            )
+
+            let validatingFlag = true
+
+            function getDeclention(num) {
+                if (validatingFlag) {
+                    const declentionArr = ['', 'а', 'ов']
+                    const mainWord = 'компьютер'
+
+                    let ending = ''
+                    num = +num
+                    num = Math.abs(num)
+
+                    const num1 = num % 10
+                    const num2 = num % 100
+
+                    if (num > 10 && num2 < 20) {
+                        ending = declentionArr[2]
+                    } else if (num1 > 1 && num1 < 5) {
+                        ending = declentionArr[1]
+                    } else if (num1 == 1) {
+                        ending = declentionArr[0]
+                    } else {
+                        ending = declentionArr[2]
+                    }
+
+                    return num + ' ' + mainWord + ending
+                }
+            }
+
+            function renderDeclensions(evt) {
+                validationdeclensionsInput(evt)
+                declensionsResult.textContent = getDeclention(evt.target.value)
+            }
+
+            function validationdeclensionsInput(evt) {
+                const value = evt.target.value.trim()
+                if (value.match(/[a-z]/i) || value.split(' ').length > 1) {
+                    declensionsInputHelp.classList.remove('d-none')
+                    declensionsInputHelp.classList.add('d-block')
+                    declensionsInput.classList.add('border-danger')
+                    validatingFlag = false
+                } else {
+                    declensionsInputHelp.classList.remove('d-block')
+                    declensionsInputHelp.classList.add('d-none')
+                    declensionsInput.classList.remove('border-danger')
+                    validatingFlag = true
+                }
+            }
+
+            declensionsInput.addEventListener('input', renderDeclensions)
+
+            for (let i = 0; i < 20; i++) {
+                console.log(
+                    getDeclention(i, ['компьютер', 'компьютера', 'компьютеров'])
+                )
+            }
+
+            console.log('------------------------------------------')
+            console.log(
+                '-------------------- Задача 2 ---------------------------'
+            )
+
+            const commonDivisorInput = document.getElementById(
+                'common-divisor-input'
+            )
+            const commonDivisorResult = document.getElementById(
+                'common-divisor-result'
+            )
+            const commonDivisorHelp = document.getElementById(
+                'common-divisor-help'
+            )
+            const commonDivisorStart = document.getElementById(
+                'common-divisor-start'
+            )
+
+            function dividersForArr(numbersArray) {
+                const array = [],
+                    max = Math.min(...numbersArray)
+
+                for (let i = 1; i <= max; i++) {
+                    if (numbersArray.every((item) => item % i === 0))
+                        array.push(i)
+                }
+                return array
+            }
+
+            function renderCommonDivisorResult(evt) {
+                evt.preventDefault()
+                const array = commonDivisorInput.value.trim().split(' ')
+
+                commonDivisorResult.textContent = `[${dividersForArr(array)}]`
+            }
+
+            function validationCommonDivisionInput(evt) {
+                const value = evt.target.value
+                if (value.match(/[a-z]/i)) {
+                    commonDivisorHelp.classList.remove('d-none')
+                    commonDivisorHelp.classList.add('d-block')
+                    commonDivisorInput.classList.add('border-danger')
+                    commonDivisorStart.disabled = true
+                } else {
+                    commonDivisorHelp.classList.remove('d-block')
+                    commonDivisorHelp.classList.add('d-none')
+                    commonDivisorInput.classList.remove('border-danger')
+                    commonDivisorStart.disabled = false
+                }
+            }
+
+            commonDivisorStart.addEventListener(
+                'click',
+                renderCommonDivisorResult
+            )
+
+            commonDivisorInput.addEventListener(
+                'input',
+                validationCommonDivisionInput
+            )
+
+            console.log(dividersForArr([42, 12, 18]))
+            console.log('-------------')
+            console.log(dividersForArr([12, 12, 22]))
+            console.log('-------------')
+            console.log(dividersForArr([11, 12, 18]))
+            console.log('------------------------------------------')
+            console.log(
+                '-------------------- Задача 3 ---------------------------'
+            )
+
+            const primeNumbersInput = document.getElementById(
+                'prime-numbers-input'
+            )
+            const primeNumbersStart = document.getElementById(
+                'prime-numbers-start'
+            )
+            const primeNumbersHelp =
+                document.getElementById('prime-numbers-help')
+            const primeNumbersResult = document.getElementById(
+                'prime-numbers-result'
+            )
+
+            function getPrimeNumbers(min, max) {
+                const resultArray = []
+                let flag = true
+
+                for (let i = min; i <= max; i++) {
+                    for (let j = 2; j < i; j++) {
+                        if (i % j === 0) {
+                            flag = false
+                        }
+                    }
+                    if (flag) {
+                        resultArray.push(i)
+                    } else {
+                        flag = true
+                    }
+                }
+                return resultArray
+            }
+
+            function renderPrimeNumbersResult(evt) {
+                evt.preventDefault()
+                console.log(primeNumbersInput.value)
+                const array = primeNumbersInput.value.trim().split(' ')
+
+                primeNumbersResult.textContent = `[${getPrimeNumbers(
+                    array[0],
+                    array[1]
+                )}]`
+            }
+
+            function validationPrimeNumbersInput(evt) {
+                const value = evt.target.value
+
+                if (value.match(/[a-z]/i) || value.split(' ').length - 1 > 1) {
+                    primeNumbersHelp.classList.remove('d-none')
+                    primeNumbersHelp.classList.add('d-block')
+                    primeNumbersInput.classList.add('border-danger')
+                    primeNumbersStart.disabled = true
+                } else {
+                    primeNumbersHelp.classList.remove('d-block')
+                    primeNumbersHelp.classList.add('d-none')
+                    primeNumbersInput.classList.remove('border-danger')
+                    primeNumbersStart.disabled = false
+                }
+            }
+
+            primeNumbersStart.addEventListener(
+                'click',
+                renderPrimeNumbersResult
+            )
+            primeNumbersInput.addEventListener(
+                'input',
+                validationPrimeNumbersInput
+            )
+            console.log(getPrimeNumbers(11, 20))
+            console.log('-------------')
+            console.log(getPrimeNumbers(5, 9))
+            console.log('-------------')
+            console.log(getPrimeNumbers(100, 120))
+            console.log('------------------------------------------')
+            console.log(
+                '-------------------- Задача 4 ---------------------------'
+            )
+
+            const showTableBtn = document.getElementById('show-table-btn')
+            const multiplicationTableInput = document.getElementById(
+                'multiplication-table-input'
+            )
+            const multiplicationTableHelp = document.getElementById(
+                'multiplication-table-help'
+            )
+            const multiplicationTable = document.getElementById(
+                'multiplication-table'
+            )
+
+            function getSpaces(num, item) {
+                let maxValue = num ** 2
+                maxValueLength = (maxValue + '').length
+                let spaces = maxValueLength - (item + '').length
+                return ' '.repeat(spaces + 1)
+            }
+
+            function getMultiplicationTable(num) {
+                let result = ''
+                let firstStr = ''
+
+                for (let i = 1; i <= num; i++) {
+                    if (i === 1) {
+                        firstStr +=
+                            ' '.repeat(num.toString().length) +
+                            getSpaces(num, num) +
+                            i
+                    } else {
+                        firstStr += getSpaces(num, i) + i
+                    }
+                }
+                console.log(firstStr)
+
+                for (let i = 1; i <= num; i++) {
+                    for (let j = 1; j <= num; j++) {
+                        result += getSpaces(num, j * i) + j * i
+                    }
+                    console.log(i + result)
+                    result = ''
+                }
+            }
+
+            function createElement(tag, classesArray) {
+                const element = document.createElement(tag)
+                classesArray ? element.classList.add(...classesArray) : element
+                return element
+            }
+
+            function renderTable(evt) {
+                evt.preventDefault()
+                multiplicationTable.textContent = ''
+
+                const num = +multiplicationTableInput.value
+
+                const theadEl = createElement('thead')
+                const trEl = createElement('tr')
+                const tbodyEl = createElement('tbody')
+
+                theadEl.insertAdjacentElement('beforeend', trEl)
+                multiplicationTable.insertAdjacentElement('beforeend', theadEl)
+                multiplicationTable.insertAdjacentElement('beforeend', tbodyEl)
+
+                for (let i = 0; i <= num; i++) {
+                    const thEl = createElement('th')
+                    thEl.scope = 'col'
+                    if (i === 0) {
+                        thEl.textContent = ''
+                    } else {
+                        thEl.textContent = i
+                    }
+                    trEl.append(thEl)
+
+                    const trInBody = createElement('tr')
+                    const thInBody = createElement('th')
+
+                    if (i === 0) {
+                        thInBody.textContent = ''
+                    } else {
+                        thInBody.textContent = i
+                        thInBody.scope = 'row'
+
+                        trInBody.append(thInBody)
+                        tbodyEl.append(trInBody)
+                    }
+                }
+
+                const trElArr = multiplicationTable.querySelectorAll('tbody tr')
+
+                for (let i = 1; i <= num; i++) {
+                    for (let j = 1; j <= num; j++) {
+                        const tdEl = createElement('td')
+                        tdEl.textContent = i * j
+                        trElArr[j - 1].insertAdjacentElement('beforeend', tdEl)
+                    }
+                }
+
+                multiplicationTableInput.value = ''
+            }
+
+            function validationMultiplicationTableInput(evt) {
+                const value = evt.target.value.trim()
+                if (value.match(/[a-z]/i) || value.split(' ').length > 1) {
+                    multiplicationTableHelp.classList.remove('d-none')
+                    multiplicationTableHelp.classList.add('d-block')
+                    multiplicationTableInput.classList.add('border-danger')
+                    showTableBtn.disabled = true
+                } else {
+                    multiplicationTableHelp.classList.remove('d-block')
+                    multiplicationTableHelp.classList.add('d-none')
+                    multiplicationTableInput.classList.remove('border-danger')
+                    showTableBtn.disabled = false
+                }
+            }
+
+            showTableBtn.addEventListener('click', renderTable)
+            multiplicationTableInput.addEventListener(
+                'input',
+                validationMultiplicationTableInput
+            )
+            getMultiplicationTable(5)
+            console.log('-------------')
+            getMultiplicationTable(10)
+            console.log('-------------')
+            getMultiplicationTable(20)
+        </script>
+    </body>
+</html>
